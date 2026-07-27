@@ -31,9 +31,8 @@ const DATA_CONFIG = {
      * @returns {string} Base URL for raw GitHub content
      */
     getDataBaseUrl: function() {
-        return `https://raw.githubusercontent.com/${this.repoOwner}/${this.repoName}/${this.dataBranch}`;
+        return `https://cdn.jsdelivr.net/gh/${this.repoOwner}/${this.repoName}@${this.dataBranch}`;
     },
-
     /**
      * Get the full URL for a data file
      * @param {string} filePath - Relative path to the data file (e.g., 'data/2025-01-01.jsonl')
